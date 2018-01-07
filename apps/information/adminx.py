@@ -11,7 +11,9 @@ class StaffInfoAdmin(object):
 
 
 class BaseInfoAdmin(object):
-    list_display = ('name', 'contact_information')
+    list_display = ('name', 'contact_information')  #显示字段
+    search_fields = ('name', 'contact_information')  #搜索字段
+    list_filter = ('name',)   #过滤器的字段
 
 
 class PositionInfoAdmin(object):

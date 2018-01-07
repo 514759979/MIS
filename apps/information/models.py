@@ -45,7 +45,6 @@ class DepartmentInfo(models.Model):
     departments = models.CharField(max_length=12, verbose_name=u'部门名称', default='')
 
     class Meta:
-        #unique_together = ('id', 'departments')
         verbose_name = u'部门信息'
         verbose_name_plural = u'部门信息'
 
