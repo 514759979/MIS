@@ -73,9 +73,9 @@ class BaseInfo(models.Model):
 
 
 class StaffInfo(models.Model):
-    name = models.ForeignKey(BaseInfo, blank=True, default='')
-    department = models.ForeignKey(DepartmentInfo, blank=True, default='')
-    position = models.ForeignKey(PositionInfo, blank=True, default='')
+    name = models.ForeignKey(BaseInfo, blank=True, default='', verbose_name=u'姓名')
+    department = models.ForeignKey(DepartmentInfo, blank=True, default='', verbose_name=u'所在部门')
+    position = models.ForeignKey(PositionInfo, blank=True, default='', verbose_name=u'职位')
 
     class Meta:
         verbose_name = u'信息汇总'
